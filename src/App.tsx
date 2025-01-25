@@ -34,10 +34,10 @@ function App() {
           />
         </p>
         <p>
-          Oops, Exportify has encountered an unexpected error (5XX) while using
-          the Spotify API. This kind of error is due to a problem on Spotify's
-          side, and although it's rare, unfortunately all we can do is retry
-          later.
+          Oops, Exportifellas has encountered an unexpected error (5XX) while
+          using the Spotify API. This kind of error is due to a problem on
+          Spotify's side, and although it's rare, unfortunately all we can do is
+          retry later.
         </p>
         <p style={{ marginTop: "50px" }}>
           Keep an eye on the{" "}
