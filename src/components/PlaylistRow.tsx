@@ -3,7 +3,7 @@ import { withTranslation, WithTranslation } from "react-i18next";
 import { Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SongsModal } from "./SongsModal";
-import { apiCall, apiCallErrorHandler } from "helpers";
+import { apiCallErrorHandler } from "helpers";
 import PlaylistExporter from "./PlaylistExporter";
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
 
@@ -105,7 +105,7 @@ class PlaylistRow extends React.Component<PlaylistRowProps> {
         <td className="d-none d-md-table-cell">
           {this.renderTickCross(playlist.collaborative)}
         </td>
-        <td className="text-end">
+        <td className="d-none d-sm-table-cell text-end">
           {/* @ts-ignore */}
           <Button
             type="submit"

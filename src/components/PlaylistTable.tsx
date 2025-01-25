@@ -270,7 +270,7 @@ class PlaylistTable extends React.Component<PlaylistTableProps> {
                   <th className="collaborative d-none d-md-table-cell">
                     {this.props.i18n.t("playlist.collaborative")}
                   </th>
-                  <th className="export">
+                  <th className="export d-none d-sm-table-cell">
                     <PlaylistsExporter
                       accessToken={this.props.accessToken}
                       onPlaylistsExportDone={this.handlePlaylistsExportDone}
@@ -280,7 +280,7 @@ class PlaylistTable extends React.Component<PlaylistTableProps> {
                       config={this.state.config}
                     />
                   </th>
-                  <th className="text-end">Get Songs</th>
+                  <th className="getsongs text-end">Get Songs</th>
                 </tr>
               </thead>
               <tbody>
