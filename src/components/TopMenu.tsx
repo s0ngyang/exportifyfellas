@@ -160,6 +160,7 @@ class TopMenu extends React.Component<TopMenuProps> {
             <p>
               <Trans
                 i18nKey="help.search_syntax.more_detail"
+                // eslint-disable-next-line jsx-a11y/anchor-has-content, jsx-a11y/anchor-is-valid
                 components={{ a: <a /> }}
               />
             </p>
