@@ -79,6 +79,15 @@ function App() {
             size="sm"
           />{" "}
           <a href={process.env.PUBLIC_URL}>Exportifellas</a>
+          {/* <img
+            src="/unp_logo.png"
+            alt="Unp Logo"
+            style={{
+              height: "20px",
+              marginLeft: "10px",
+              verticalAlign: "middle",
+            }}
+          /> */}
         </h1>
 
         <p id="subtitle" className="lead text-secondary">
