@@ -2,7 +2,7 @@
   "name": "exportify",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://exportify.app",
+  "homepage": "https://s0ngyang.github.io/exportifellas/",
   "dependencies": {
     "@bugsnag/js": "^7.25.0",
     "@bugsnag/plugin-react": "^7.25.0",
