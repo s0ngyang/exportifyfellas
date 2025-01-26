@@ -1,8 +1,14 @@
-[![Build Status](https://api.travis-ci.com/watsonbox/exportify.svg?branch=master)](https://travis-ci.com/github/watsonbox/exportify)
+# Exportifellas
 
-<a href="https://exportify.app/"><img src="assets/screenshot.png"/></a>
+A **clone** of [Exportify](https://exportify.app) with an added customised feature "Get Songs" to assist Raffles Hall Unplugged and RHockerfellas in the song voting process.
 
-Export your Spotify playlists to [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) by clicking on this link: [https://exportify.app/](https://exportify.app/).
+Found an bug? Create a new issue in the issues tab and contact @s0ngyang on telegram.
+
+## Introduction
+
+[![Screenshot](assets/screenshot.png)](https://s0ngyang.github.io/exportifellas/)
+
+Export your Spotify playlists to [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) by clicking on this link: [https://s0ngyang.github.io/exportifellas/](https://s0ngyang.github.io/exportifellas/).
 
 As many users have noted, there is no way to export/archive/backup playlists from the Spotify client for safekeeping. This application provides a simple interface for doing that using the [Spotify Web API](https://developer.spotify.com/documentation/web-api/).
 
@@ -13,7 +19,6 @@ As many users have noted, there is no way to export/archive/backup playlists fro
 - ⚙️ Optional inclusion of album, artist and audio features data in export files
 - 🔍 Playlist search with [advanced search syntax](#advanced-search-syntax) and results export
 - 🌓 Dark mode
-- 🗺 Available in 10 languages (English, French, Spanish, Italian, German, Portuguese, Swedish, Dutch, Japanese and Arabic)
 - 📱 Mobile friendly
 - ℹ Quick reference help
 - 🚀 [Advanced rate limiting handling](https://github.com/watsonbox/exportify/pull/75) for speedy exports
@@ -58,7 +63,7 @@ Track data is exported in [UTF-8](https://en.wikipedia.org/wiki/UTF-8) encoded [
 
 By clicking on the cog, additional data can be exported.
 
-<a href="https://watsonbox.github.io/exportify/"><img src="https://user-images.githubusercontent.com/17737/100668594-72be1600-335c-11eb-90d6-c9ae873e347d.png"/></a>
+[![Screenshot](https://user-images.githubusercontent.com/17737/100668594-72be1600-335c-11eb-90d6-c9ae873e347d.png)](https://s0ngyang.github.io/exportifellas/)
 
 By selecting "Include artists data", the following fields will be added from the [Spotify artist object](https://developer.spotify.com/documentation/web-api/reference/get-multiple-artists):
 
@@ -91,7 +96,7 @@ Note that the more data being exported, the longer the export will take.
 
 If you're searching for a specific playlist to export, you can use the search facility to find it quickly by name:
 
-<a href="https://watsonbox.github.io/exportify/"><img src="https://user-images.githubusercontent.com/17737/100201109-eb0d7d00-2eff-11eb-993e-7ed955e2361c.gif"/></a>
+[![Screenshot](https://user-images.githubusercontent.com/17737/100201109-eb0d7d00-2eff-11eb-993e-7ed955e2361c.gif)](https://s0ngyang.github.io/exportifellas/)
 
 - Searching is _case-insensitive_.
 - Search results can be exported as a zip file by clicking "Export Results"
@@ -103,15 +108,14 @@ If you're searching for a specific playlist to export, you can use the search fa
 
 Certain search queries have special meaning:
 
-| Search query | Meaning |
-|----|----|
-| `public:true` | Only show public playlists |
-| `public:false` | Only show private playlists |
-| `collaborative:true` | Only show collaborative playlists |
-| `collaborative:false` | Don't show collaborative playlists |
-| `owner:me` | Only show playlists I own |
-| `owner:[owner]` | Only show playlists owned by `[owner]` |
-
+| Search query          | Meaning                                |
+| --------------------- | -------------------------------------- |
+| `public:true`         | Only show public playlists             |
+| `public:false`        | Only show private playlists            |
+| `collaborative:true`  | Only show collaborative playlists      |
+| `collaborative:false` | Don't show collaborative playlists     |
+| `owner:me`            | Only show playlists I own              |
+| `owner:[owner]`       | Only show playlists owned by `[owner]` |
 
 ## Development
 
@@ -140,18 +144,12 @@ Builds the app for production to the `build` folder.
 
 In addition to [Create React App](https://github.com/facebook/create-react-app), the application is built using the following tools/libraries:
 
-* [React](https://reactjs.org/) - A JavaScript library for building user interfaces
-* [Bootstrap 5](https://getbootstrap.com/) - styling and UI components
-* [Font Awesome 6](https://fontawesome.com/) - vector icon set and toolkit
-* [react-i18next](https://react.i18next.com/) - internationalization framework
-* [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - light-weight solution for testing React DOM nodes
-* [MSW](https://mswjs.io/) - network-level request mocking (more of my own thoughts [here](https://watsonbox.github.io/posts/2020/11/30/discovering-msw.html))
-
-### History
-
-- 2015: Exportify is [born](https://github.com/watsonbox/exportify/commit/b284822e12c3adea8fb83258fdb00ec4690701e1)
-- 2020: [Major release](https://watsonbox.github.io/posts/2020/12/02/exportify-refresh.html) including search, artist and audio features, liked songs export, and a new rate limiting system
-- 2024: [Major release](https://watsonbox.github.io/posts/2024/09/04/exportify-updates.html) including dark mode, internationalization, and search enhancements
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [Bootstrap 5](https://getbootstrap.com/) - styling and UI components
+- [Font Awesome 6](https://fontawesome.com/) - vector icon set and toolkit
+- [react-i18next](https://react.i18next.com/) - internationalization framework
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - light-weight solution for testing React DOM nodes
+- [MSW](https://mswjs.io/) - network-level request mocking (more of my own thoughts [here](https://watsonbox.github.io/posts/2020/11/30/discovering-msw.html))
 
 ## Notes
 
@@ -161,20 +159,11 @@ In addition to [Create React App](https://github.com/facebook/create-react-app),
 
   Unfortunately that's just how it is.
 
-- I've [gone to some lengths](https://github.com/watsonbox/exportify/pull/75) to try to eliminate errors resulting from excessively high usage of the Spotify API. Nonetheless, exporting data in bulk is a fairly request-intensive process, so please do try to use this tool responsibly. If you do require more throughput, please consider [creating your own Spotify application](https://github.com/watsonbox/exportify/issues/6#issuecomment-110793132) which you can use with Exportify directly.
+- I've [gone to some lengths](https://github.com/watsonbox/exportify/pull/75) to try to eliminate errors resulting from excessively high usage of the Spotify API. Nonetheless, exporting data in bulk is a fairly request-intensive process, so please do try to use this tool responsibly. If you do require more throughput, please consider [creating your own Spotify application](https://github.com/watsonbox/exportify/issues/6#issuecomment-110793132) which you can use with Exportifellas directly.
 
 - Disclaimer: It should be clear, but this project is not affiliated with Spotify in any way. It's just an app using their API like any other, with a cheeky name and logo 😇.
 
 - In case you don't see the playlists you were expecting to see and realize you've accidentally deleted them, it's actually possible to [recover them](https://support.spotify.com/us/article/can-i-recover-a-deleted-playlist/).
-
-
-## Error Monitoring
-
-Error monitoring provided by Bugsnag.
-
-<a href="http://www.bugsnag.com">
-  <img src="assets/bugsnag.png" width="200" />
-</a>
 
 ## Running With Docker
 
@@ -188,7 +177,7 @@ And then open [http://localhost:3000](http://localhost:3000) to view it in the b
 
 ## Contributing
 
-1. Fork it ( https://github.com/watsonbox/exportify/fork )
+1. Fork it [here](https://github.com/s0ngyang/exportifellas/fork)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
