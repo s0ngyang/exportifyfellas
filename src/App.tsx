@@ -79,15 +79,15 @@ function App() {
             size="sm"
           />{" "}
           <a href={process.env.PUBLIC_URL}>Exportifellas</a>
-          {/* <img
-            src="/unp_logo.png"
+          <img
+            src={`${process.env.PUBLIC_URL}/unp_logo.png`}
             alt="Unp Logo"
             style={{
-              height: "20px",
-              marginLeft: "10px",
-              verticalAlign: "middle",
+              height: "42px",
+              marginLeft: "5px",
+              marginBottom: "8px",
             }}
-          /> */}
+          />
         </h1>
 
         <p id="subtitle" className="lead text-secondary">
