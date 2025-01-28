@@ -86,6 +86,7 @@ function App() {
               height: "42px",
               marginLeft: "5px",
               marginBottom: "8px",
+              userSelect: "none",
             }}
           />
         </h1>
