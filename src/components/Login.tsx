@@ -4,6 +4,7 @@ import { Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { getQueryParam } from "helpers";
 import { CLIENT_ID } from "../constants";
+
 class Login extends React.Component<WithTranslation> {
   authorize() {
     let clientId = getQueryParam("app_client_id");
